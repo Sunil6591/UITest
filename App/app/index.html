@@ -56,7 +56,7 @@
 			<div class="row">
 				<div class="col-md-3">
 					
-					<img src="/img/businessman.png" alt="Happy Office Man">
+					<img src="/img/businessman.png" alt="Happy business Man">
 					<h4>Employee Directory</h4>
 					<h6>Aliquam nec tempor arcu</h6>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, cursus id sodales non, ornare eget arcu.
@@ -67,28 +67,37 @@
 					<h6>Aenean ullamcorper scelerisque libero</h6>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, cursus id sodales non, ornare eget arcu.
 				</div>
-				<div class="col-md-8">
-					<div class="tabContainer" kendo-tab-strip k-content-urls="[ 'templates/testpopup.html', null, 'templates/testpopup.html' ]">
+				<div class="col-md-9">
+					<div class="tabContainer" kendo-tab-strip k-content-urls="[ 
+						'templates/homeTab.html', 
+						'templates/servicesTab.html', 
+						'templates/companyTab.html',
+						'templates/employeeTab.html',
+						'templates/workToolsTab.html',
+						'templates/contactTab.html'
+						]">
 						<!-- tab list -->
 						<ul>
-							<li class="k-state-active">First tab</li>
-							<li>Second tab</li>
-							<li>Ajax content</li>
+							<li >Home</li>
+							<li>Services</li>
+							<li class="k-state-active">Company</li>
+							<li>Employee</li>
+							<li>WorkTools</li>
+							<li>Contact</li>
+
 						</ul>
 
 						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
 
-						<div style="padding: 1em">
-							This is the second tab
-						</div>
-
-						<div>
-							
-						</div>
+						
 					</div>	
 				</div>
-				<div class="col-md-1">
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -113,12 +122,17 @@
 	<script src="/lib/angular-kendo.min.js"></script>
 	<script type="text/javascript" src="/lib/underscore-1.4.4.min.js"></script>
 	<script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/lib/ui-bootstrap-custom-0.10.0.min.js"></script>
+	<script type="text/javascript" src="/lib/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+	
+	
 	<!--<script type="text/javascript" src="/lib/angular/angular.min.js"></script>		
 	<script type="text/javascript" src="/lib/angular/angular-route.min.js"></script>
 	<script type="text/javascript" src="/lib/angular/angular-resource.min.js"></script>-->
 	<script type="text/javascript" src="/js/app.js"></script>
 	<script type="text/javascript" src="/js/directives/loginControl.js"></script>
 	<script type="text/javascript" src="/js/controllers/LoginController.js"></script>
+	<script type="text/javascript" src="/js/controllers/CompanyTabController.js"></script>
 	<!--<script type="text/javascript" src="/js/filters.js"></script>
 	<script type="text/javascript" src="/js/controllers/EditEventDetailController.js"></script>
 	<script type="text/javascript" src="/js/controllers/EventDetailController.js"></script>

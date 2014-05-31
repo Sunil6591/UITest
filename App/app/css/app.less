@@ -3,7 +3,7 @@
 @main-color: lightblue;
 @highlighted-color: purple;
 @base-size: 12px;
-
+@highlighted-color2: blue;
 html {
 	
 }
@@ -21,12 +21,19 @@ h4 {
 	font-size: @base-size + 6px;
 }
 
+h5 {
+	font-size: @base-size + 3px;
+	color: @highlighted-color;
+}
+
 h6 {
 	font-size: @base-size;
 	color: @highlighted-color;
 }
 
-
+.highlightText {
+	color: @highlighted-color2;
+}
 
 .punchLine {
 	color: @highlighted-color;
@@ -47,6 +54,13 @@ h6 {
 footer {
 	padding-left: 300px;
 	font-size: @base-size - 2px;
+}
+
+.globeImage {
+	position: absolute;
+	bottom: 100px;
+	top: 30px;
+	right: 2px;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
