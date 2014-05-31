@@ -1,0 +1,49 @@
+/* app css stylesheet */
+
+@main-color: lightblue;
+@highlighted-color: purple;
+@base-size: 12px;
+
+html {
+	
+}
+body {
+    background-color: @main-color;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+	font-size: @base-size;
+}
+h1 {
+	font-size: @base-size + 20px;
+	color: @highlighted-color;
+}
+
+h4 {
+	font-size: @base-size + 6px;
+}
+
+h6 {
+	font-size: @base-size;
+	color: @highlighted-color;
+}
+
+
+
+.punchLine {
+	color: @highlighted-color;
+}
+.tab-color {
+	background-color: white;
+}
+
+.nav {
+     float: right;
+    
+  }
+
+  .nav-pills>li>a {
+  	color: @highlighted-color;
+  }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}

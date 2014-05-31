@@ -1,0 +1,60 @@
+<div>
+<div class="page-header">
+	<h1>New Event</h1>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-4">
+			<img ng-src="{{event.imageUrl}}" class="img-responsive" alt="Event Image" />
+
+		</div>
+		<div class="col-md-8">
+			<form role="form" name="newEventForm">
+				<fieldset>
+					<div class="form-group">
+						<label for="EventName" >Event Name:</label>
+						<input id="EventName" class="form-control" type="text" placeholder="Enter Event Name" ng-model="event.name" required />
+					</div>
+					<div class="form-group">
+						<label for="EventDate" >Event Date:</label>
+						<input id="EventDate" class="form-control" type="date" placeholder="Enter Event Date" ng-model="event.date"/>
+					</div>
+					<div class="form-group">
+						<label for="EventTime" >Event Time:</label>
+						<input id="EventTime" class="form-control" type="time" placeholder="Enter Event Time" ng-model="event.time"/>
+					</div>
+					<div class="form-group">
+						<label for="EventPrice" >Event Price:</label>
+						<input id="EventPrice" class="form-control" type="text" placeholder="Enter Event Price" ng-model="event.price"/>
+					</div>
+					<div class="form-group">
+						<label for="Location" >Event Location:</label>								
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<input id="LocationCity" class="form-control" type="text" placeholder="Enter City" ng-model="event.city"/>
+							</div>
+							<div class="col-md-4">
+								<input id="LocationState" class="form-control" type="text" placeholder="Enter State" ng-model="event.state"/>
+							</div>
+							<div class="col-md-4">
+								<input id="LocationPin" class="form-control" type="text" placeholder="Enter Pin" ng-model="event.pin"/>
+							</div>
+						</div>
+
+					</div>
+					<div class="form-group">
+						<label for="EventImageUrl" >Event Image Url:</label>
+						<input id="EventImageUrl" class="form-control" type="url" placeholder="Enter Event Image Url" ng-model="event.imageUrl"/>
+					</div>
+				</fieldset>
+
+				<button type="submit" ng-disabled="newEventForm.$invalid" class="btn btn-primary" ng-click="saveEvent(event,newEventForm)">Submit</button>
+				<button type="button" class="btn btn-default" ng-click="cancelEvent()">Cancel</button>
+
+			</form>
+		</div>
+	</div>
+</div>

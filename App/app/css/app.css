@@ -1,0 +1,16 @@
+/* app css stylesheet */
+body {
+    background-color: lightblue;
+}
+.tab-color {
+	background-color: white;
+}
+
+.nav {
+     float: right;
+    
+  }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}

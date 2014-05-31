@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" ng-app="myFirstApp">
+<head>
+	<meta charset="utf-8" />
+	<link href="/css/kendo.common.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/kendo.silver.min.css" rel="stylesheet" type="text/css" />
+	<!--<link href="//cdn.kendostatic.com/2014.1.318/styles/kendo.silver.mobile.min.css" rel="stylesheet" type="text/css" />-->
+	<link href="/css/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+	<link href="/css/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet/less" type="text/css" href="/css/app.less">
+</head>
+<body ng-cloak>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div>
+						<h1>U.R. HIRED</h1>
+						<div class="punchLine">Lorem ipsum dolor sit amet</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="row">
+						<div class="col-md-12">
+							<div style="text-align:right;">
+							<ul class="nav nav-pills">
+								<li><a href="#">Employee Directory</a></li>
+								<li><a href="#">Search</a></li>
+								<li><a href="#">Logout</a></li>
+							</ul>
+								
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div>
+								<div>
+									<form class="navbar-form navbar-left">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="User ID" required>
+											<input type="text" class="form-control" placeholder="Password" required>
+										</div>
+										<button type="submit" class="btn btn-default navbar-btn">Sign In</button>
+									</form>
+								</div>								
+								
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<br>
+					<img src="/img/businessman.png" alt="Happy Office Man">
+					<h4>Employee Directory</h4>
+					<h6>Aliquam nec tempor arcu</h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, cursus id sodales non, ornare eget arcu.
+					<br>
+					<hr>
+					
+					<h4>Lotus Notes</h4>
+					<h6>Aenean ullamcorper scelerisque libero</h6>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, cursus id sodales non, ornare eget arcu.
+				</div>
+				<div class="col-md-8 tab-color">
+					<div kendo-tab-strip k-content-urls="[ null, null, 'templates/testpopup.html' ]">
+						<!-- tab list -->
+						<ul>
+							<li class="k-state-active">First tab</li>
+							<li>Second tab</li>
+							<li>Ajax content</li>
+						</ul>
+
+						<div style="padding: 1em">
+							This is the first tab
+						</div>
+
+						<div style="padding: 1em">
+							This is the second tab
+						</div>
+
+						<div>
+							
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, cursus id sodales non, ornare eget arcu. Aenean ullamcorper scelerisque libero, vitae blandit felis viverra in. Sed tempus malesuada tincidunt. Curabitur fringilla orci in viverra adipiscing. Aliquam nec tempor arcu, ac molestie odio. Sed in odio nec nisi condimentum accumsan. Maecenas iaculis, arcu eu lobortis cursus, sem quam tristique libero, vel auctor arcu leo sit amet risus. Phasellus in sem gravida, laoreet nunc gravida, dictum velit.
+	</footer>
+
+<script src="/lib/less.min.js"></script>
+	<script src="/lib/jquery-1.9.1.min.js"></script>
+	<script src="/lib/kendo.all.min.js"></script>
+	<script src="/lib/angular/angular.min.js"></script>
+	<script src="/lib/angular/angular-route.min.js"></script>
+	<script src="/lib/angular/angular-sanitize.min.js"></script>
+	<script src="/lib/angular/angular-resource.min.js"></script>
+	<script src="/lib/angular-kendo.min.js"></script>
+	<script type="text/javascript" src="/lib/underscore-1.4.4.min.js"></script>
+	<script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+	<!--<script type="text/javascript" src="/lib/angular/angular.min.js"></script>		
+	<script type="text/javascript" src="/lib/angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="/lib/angular/angular-resource.min.js"></script>-->
+	<script type="text/javascript" src="/js/app.js"></script>
+	<!--<script type="text/javascript" src="/js/filters.js"></script>
+	<script type="text/javascript" src="/js/controllers/EditEventDetailController.js"></script>
+	<script type="text/javascript" src="/js/controllers/EventDetailController.js"></script>
+	<script type="text/javascript" src="/js/controllers/EventListController.js"></script>
+	<script type="text/javascript" src="/js/controllers/SampleController.js"></script>	
+	<script type="text/javascript" src="/js/services/EventsData.js"></script>
+	<script type="text/javascript" src="/js/directives/mySample.js"></script>
+	<script type="text/javascript" src="/js/directives/eventThumbnail.js"></script>
+	<script type="text/javascript" src="/js/directives/upVote.js"></script>-->
+</body>
+</html>
