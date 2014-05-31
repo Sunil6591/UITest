@@ -6,8 +6,22 @@
 		</span>
 		
 	</div>
-	<div>
-		<br>
-		<a href="#" ng-click="advanceOption">Advances search options >></a>
-	</div>
 </form>
+<div>
+	<br>
+	<a href ng-click="advanceOption()">Advances search options >></a>
+</div>
+<div ng-show="showhideAdvanceOption">
+	<br>
+	<form name="AdvanceSearchForm">
+		<div class="form-group">
+			<label for"companyNametxt">Company Name</label>
+			<input id="companyNametxt" type="text" ng-model="companyName" class="form-control form-control-advSearch" placeholder="E.g. SunGard">
+		</div>
+		<div class="form-group">
+			<label for"companyLoctxt">Company Location</label>
+			<input id="companyLoctxt" type="text" ng-model="companyLocation" class="form-control form-control-advSearch" placeholder="E.g. Pune">
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>

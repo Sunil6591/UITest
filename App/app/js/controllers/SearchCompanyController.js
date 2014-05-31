@@ -4,4 +4,8 @@ myFirstApp.controller("SearchCompanyController",function($scope) {
 			alert('Searching ...');
 		}
 	}
+	$scope.showhideAdvanceOption = false;
+	$scope.advanceOption = function() {
+		$scope.showhideAdvanceOption = $scope.showhideAdvanceOption === false ? true:false;
+	}
 });
