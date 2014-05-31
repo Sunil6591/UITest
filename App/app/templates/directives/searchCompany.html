@@ -1,0 +1,13 @@
+<form name="SearchForm">
+	<div class="input-group">
+		<input type="text" class="form-control" required placeholder="Search">
+		<span class="input-group-btn">
+			<button class="btn btn-default" ng-disabled="SearchForm.$invalid" type="submit" ng-click="search(SearchForm)">Go!</button>
+		</span>
+		
+	</div>
+	<div>
+		<br>
+		<a href="#" ng-click="advanceOption">Advances search options >></a>
+	</div>
+</form>

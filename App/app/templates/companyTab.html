@@ -1,5 +1,5 @@
 <div class="row" ng-controller="CompanyTabController">
-	<div class="col-md-8">
+	<div class="col-md-7">
 		<h4>Company News</h4>
 		<hr>
 		<h5>Maecenas iaculis, arcu eu lobortis cursus, sem quam tristique libero.</h5>
@@ -21,7 +21,7 @@
 			<accordion-group heading="Lorem ipsum dolor sit amet" is-open="true">
 		      <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Morbi quis mollis odio:</p>
 		        <ul>
-		        <li ng-repeat="item in items" ng-bind-html-unsafe="item">{{item}}</li>
+		        <li ng-repeat="item in items" ng-bind-html="item">{{item}}</li>
 		        </ul>
 		        <p>Sed non gravida sem, sed aliquet massa. Nullam a gravida sapien. Nullam imperdiet diam et dictum tristique.<span class="highlightText"> Fusce auctor pulvinar odio iaculis luctus.</span></p>
 		    </accordion-group>
@@ -30,8 +30,24 @@
     		</accordion-group>
 	</accordion>
 </div>
-<div class="col-md-3">
+<div class="col-md-4">
+	<div>
 	<h4>Search</h4>
+		<br>
+		<search-company />
+	</div>
+	<div>
+		<hr>
+		<h4>LEADERSHIP MESSAGES</h4>
+		<div>
+			<img src="/img/dog.png" title="Dog" alt="Dog" class="img-responsive img-rounded" style="width=100%;" /> 
+		</div>
+		<br>
+		<h5>Maecenas iaculis, arcu eu lobortis cursus, sem quam tristique libero.</h5>
+		<p>
+			Ut euismod tortor nisi, viverra tincidunt massa varius at. Phasellus leo ante, varius ac sem sit amet, mollis suscipit leo. Curabitur ut dolor vitae quam rutrum scelerisque ut in tellus. <a href="#" tooltip-placement="top" tooltip="Curabitur ut dolor vitae quam rutrum scelerisque ut in tellus.">Phasellus vitae risus lacus. </a> Ut quis pharetra nulla, laoreet rutrum arcu. Mauris iaculis dapibus nibh, eget tristique metus porttitor sit amet. Nulla odio lacus, laoreet sed risus at, tincidunt blandit magna. Mauris nec mattis odio.
+		</p>
+	</div>
 </div>
 </div>
 
@@ -43,7 +59,7 @@
 			<p>Fusce at egestas leo. Maecenas imperdiet nibh accumsan est dictum euismod. Donec scelerisque nibh eu vulputate ultricies. Maecenas nulla quam, ullamcorper ac dui sed, interdum aliquet leo. Duis quis blandit nunc. Quisque semper tortor eget leo feugiat, a ultrices diam mattis. Nunc erat leo, consequat non mattis ac, mollis ac libero. <span class="highlightText">Vivamus in laoreet metus.</span></p>
 		</div>
 		<div class="globeImage" >
-			<img src="/img/globe.png" title="Globe" alt="Globe" />
+			<img src="/img/globe.png" title="Globe" alt="Globe" class="img-responsive" />
 		</div>
 		
 		

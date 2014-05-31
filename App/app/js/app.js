@@ -1,4 +1,4 @@
 'use strict';
 
 
-var myFirstApp = angular.module('myFirstApp',['ngResource','ngRoute','kendo.directives','ui.bootstrap']);
+var myFirstApp = angular.module('myFirstApp',['ngResource','ngRoute','ngSanitize','kendo.directives','ui.bootstrap']);
