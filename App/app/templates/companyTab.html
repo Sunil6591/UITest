@@ -1,25 +1,25 @@
 <div ng-controller="CompanyTabController">
-<div class="row" >
-	<div class="col-md-7">
-		<h4>{{company.header}}</h4>
-		<hr>
-		<div class="vhr">
-			<div style="margin-right:20px">
-				<h5>{{company.title}}</h5>
-				<p>{{company.description}}</p>
+	<div class="row" >
+		<div class="col-md-7">
+			<h4>{{company.header}}</h4>
+			<hr>
+			<div class="vhr">
+				<div style="margin-right:20px">
+					<h5>{{company.title}}</h5>
+					<p>{{company.description}}</p>
 
-				<accordion close-others="oneAtATime">					
-					<accordion-group  ng-repeat="new in company.news" is-open="new.isOpen">
+					<accordion close-others="oneAtATime">					
+						<accordion-group  ng-repeat="new in company.news" is-open="new.isOpen">
 						<accordion-heading>
-							<div ng-bind-html="new.title">{{new.title}}
-							</div>
-						</accordion-heading>
-						<div ng-bind-html="new.content">{{new.content}}</div>
-					</accordion-group>
-				</accordion>
-			</div>
+						<div ng-bind-html="new.title">{{new.title}}
+						</div>
+					</accordion-heading>
+					<div ng-bind-html="new.content">{{new.content}}</div>
+				</accordion-group>
+			</accordion>
 		</div>
 	</div>
+</div>
 <div class="col-md-4">
 	<div>
 		<h4>Search</h4>
@@ -42,14 +42,13 @@
 		<hr>
 		<div style="width:80%">
 			<div ng-bind-html="company.recapNewsDescription">
-			<p>{{company.recapNewsDescription}}</p></div>
+				<p>{{company.recapNewsDescription}}</p></div>
+			</div>
+			<div class="globeImage" >
+				<img src="/img/globe.png" title="Globe" alt="Globe" class="img-responsive" />
+			</div>		
+			<br>
 		</div>
-		<div class="globeImage" >
-			<img src="/img/globe.png" title="Globe" alt="Globe" class="img-responsive" />
-		</div>
-		
 		
 	</div>
-	
-</div>
 </div>
