@@ -25,9 +25,9 @@
 						<div class="col-md-12">
 							<div >
 								<ul class="nav nav-pills">
-									<li><a href="#">Employee Directory</a></li>
-									<li><a href="#">Search</a></li>
-									<li><a href="#">Logout</a></li>
+									<li ng-repeat="nav in main.navMenus">
+										<a ng-href="{{nav.url}}">{{nav.name}}</a>
+									</li>
 								</ul>
 								
 							</div>
@@ -36,9 +36,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div>
-									<!-- Semantic markup -->
-									<login-control />
-								</div>	
+								<!-- Semantic markup -->
+								<login-control />
+							</div>	
 						</div>
 					</div>
 				</div>
@@ -51,58 +51,41 @@
 				<div class="col-md-3">					
 					<img src="/img/businessman.png" alt="Happy business Man" title="Happy business Man" class="img-responsive">
 					<div ng-repeat="card in main.annoucements">
+						<!-- Semantic markup -->
 						<annoucement-card card=card />						
 					</div>					
 				</div>
 				<div class="col-md-9">
-					<div class="tabContainer" kendo-tab-strip k-content-urls="[ 
-						'templates/homeTab.html', 
-						'templates/servicesTab.html', 
-						'templates/companyTab.html',
-						'templates/employeeTab.html',
-						'templates/workToolsTab.html',
-						'templates/contactTab.html'
-						]">
-						<!-- tab list -->
-						<ul>
-							<li >Home</li>
-							<li>Services</li>
-							<li class="k-state-active">Company</li>
-							<li>Employee</li>
-							<li>WorkTools</li>
-							<li>Contact</li>
-						</ul>
-					</div>	
+					<ng-view></ng-view>
 				</div>
-				
+
 			</div>
+		</section>
+		<div class="container">
+			<br>
+			<br>
+			<footer>
+				{{main.footer}}
+			</footer>
 		</div>
-	</section>
-	<div class="container">
-		<br>
-		<br>
-		<footer>
-			{{main.footer}}
-		</footer>
-	</div>
 
 
-	
 
-	<script src="/lib/less.min.js"></script>
-	<script src="/lib/jquery-1.9.1.min.js"></script>
-	<script src="/lib/kendo.all.min.js"></script>
-	<script src="/lib/angular/angular.min.js"></script>
-	<script src="/lib/angular/angular-route.min.js"></script>
-	<script src="/lib/angular/angular-sanitize.min.js"></script>
-	<script src="/lib/angular/angular-resource.min.js"></script>
-	<script src="/lib/angular-kendo.min.js"></script>
-	<script type="text/javascript" src="/lib/underscore-1.4.4.min.js"></script>
-	<script type="text/javascript" src="/lib/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/lib/ui-bootstrap-custom-0.10.0.min.js"></script>
-	<script type="text/javascript" src="/lib/ui-bootstrap-custom-tpls-0.10.0.js"></script>
-	
-	
+
+		<script src="/lib/less.min.js"></script>
+		<script src="/lib/jquery-1.9.1.min.js"></script>
+		<script src="/lib/kendo.all.min.js"></script>
+		<script src="/lib/angular/angular.min.js"></script>
+		<script src="/lib/angular/angular-route.min.js"></script>
+		<script src="/lib/angular/angular-sanitize.min.js"></script>
+		<script src="/lib/angular/angular-resource.min.js"></script>
+		<script src="/lib/angular-kendo.min.js"></script>
+		<script type="text/javascript" src="/lib/underscore-1.4.4.min.js"></script>
+		<script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/lib/ui-bootstrap-custom-0.10.0.min.js"></script>
+		<script type="text/javascript" src="/lib/ui-bootstrap-custom-tpls-0.10.0.js"></script>
+
+
 	<!--<script type="text/javascript" src="/lib/angular/angular.min.js"></script>		
 	<script type="text/javascript" src="/lib/angular/angular-route.min.js"></script>
 	<script type="text/javascript" src="/lib/angular/angular-resource.min.js"></script>-->

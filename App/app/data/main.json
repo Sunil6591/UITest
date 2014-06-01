@@ -1,36 +1,18 @@
 {
   "header": "U.R. HIRED",
   "puchLine": "Lorem ipsum dolor sit amet",
-  "tabs": [
+  "navMenus": [
     {
-      "name": "Home",
-      "url": "templates/homeTab.html",
-      "isActive": false
+      "name": "Employee Directory",
+      "url": "#/employeeDir"
     },
     {
-      "name": "Services",
-      "url": "templates/servicesTab.html",
-      "isActive": false
+      "name": "Search",
+      "url": "#/search"
     },
     {
-      "name": "Company",
-      "url": "templates/companyTab.html",
-      "isActive": true
-    },
-    {
-      "name": "Employee",
-      "url": "templates/employeeTab.html",
-      "isActive": false
-    },
-    {
-      "name": "WorkTools",
-      "url": "templates/workToolsTab.html",
-      "isActive": false
-    },
-    {
-      "name": "Contact",
-      "url": "templates/contactTab.html",
-      "isActive": false
+      "name": "Logout",
+      "url": "#/home"
     }
   ],
   "annoucements": [
