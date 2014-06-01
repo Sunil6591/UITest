@@ -1,3 +1,3 @@
 myFirstApp.factory("companyData",function($resource) {
-	return $resource('data/company/company.json');  
+	return $resource('data/company.json');  
 });

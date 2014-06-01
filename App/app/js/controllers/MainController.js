@@ -1,16 +1,15 @@
-myFirstApp.controller("MainController",function($scope) {
+myFirstApp.controller("MainController",function($scope,mainData) {
 
-	$scope.annoucements = [
-		{
-			header: "Employee Directory",
-			title: "Aliquam nec tempor arcu",
-			content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, cursus id sodales non, ornare eget arcu."
-		},
-		{
-			header: "Lotus Notes",
-			title: "Aenean ullamcorper scelerisque libero", 
-			content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, cursus id sodales non, ornare eget arcu."
-		}
-	];
+	mainData.get(function(data) {
+		$scope.main = data;
+
+		$scope.main.tabUrls = new kendo.data.ObservableArray([]);
+
+		_.each($scope.main.tabs, function(tab) { 
+
+			$scope.main.tabUrls.push(tab.url);
+
+		});
+	});
 
 });
