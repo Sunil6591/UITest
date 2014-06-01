@@ -34,7 +34,7 @@
 			</div>
 		</div>
 	</div>
-<div class="col-md-3">
+<div class="col-md-4">
 	<div>
 		<h4>Search</h4>
 		<br>
@@ -42,15 +42,10 @@
 	</div>
 	<div>
 		<hr>
-		<h4>LEADERSHIP MESSAGES</h4>
-		<div>
-			<img src="/img/dog.png" title="Dog" alt="Dog" class="img-responsive img-rounded" style="width=100%;" /> 
+		<div ng-repeat="card in companyAnnoucements">
+			<annoucement-card card=card />						
 		</div>
-		<br>
-		<h5>Maecenas iaculis, arcu eu lobortis cursus, sem quam tristique libero.</h5>
-		<p>
-			Ut euismod tortor nisi, viverra tincidunt massa varius at. Phasellus leo ante, varius ac sem sit amet, mollis suscipit leo. Curabitur ut dolor vitae quam rutrum scelerisque ut in tellus. <a href="#" tooltip-placement="top" tooltip="Curabitur ut dolor vitae quam rutrum scelerisque ut in tellus.">Phasellus vitae risus lacus. </a> Ut quis pharetra nulla, laoreet rutrum arcu. Mauris iaculis dapibus nibh, eget tristique metus porttitor sit amet. Nulla odio lacus, laoreet sed risus at, tincidunt blandit magna. Mauris nec mattis odio.
-		</p>
+		
 	</div>
 </div>
 </div>
