@@ -1,16 +1,76 @@
 /* app css stylesheet */
 body {
-    background-color: lightblue;
+  background-color: #add8e6;
+  font-family: 'Arvo', serif;
+  font-size: 12px;
 }
-.tab-color {
-	background-color: white;
+h1 {
+  font-size: 32px;
+  color: #800080;
 }
-
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 15px;
+  color: #800080;
+}
+h6 {
+  font-size: 12px;
+  color: #800080;
+}
+.highlightText {
+  color: #0000ff;
+}
+.punchLine {
+  color: #800080;
+}
+.tabContainer {
+  background-color: #add8e6;
+  border-radius: 5px;
+}
 .nav {
-     float: right;
-    
-  }
-
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  float: right;
+}
+.nav-pills > li > a {
+  color: #800080;
+}
+footer {
+  padding-left: 300px;
+  font-size: 10px;
+}
+.globeImage {
+  position: absolute;
+  bottom: 100px;
+  top: 30px;
+  right: 2px;
+}
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
   display: none;
+}
+.form-control-advSearch {
+  width: 50%;
+  height: 14px;
+}
+.vhr {
+  border-right: 1px solid #eee;
+}
+.k-tabstrip .k-content.k-state-active {
+  background-color: #fff;
+  color: #515967;
+  border-radius: 6px;
+}
+.dotted {
+  border-bottom: 1px dashed #999;
+  cursor: pointer;
+  text-decoration: none;
+}
+.panel-title > a {
+  color: inherit;
+  cursor: pointer;
 }
