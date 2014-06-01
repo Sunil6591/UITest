@@ -4,12 +4,12 @@
   "description": "Aenean ullamcorper scelerisque libero, vitae blandit felis viverra in. Sed tempus malesuada incidunt. Curabitur fringilla orci in viverra adipiscing. Aliquam nec tempor arcu",
   "news": [
     {
-      "title": "<span class='glyphicon glyphicon-ok'></span> Aliquam nec tempor arcu",
+      "title": "<span class='glyphicon glyphicon-ok blue'></span> Aliquam nec tempor arcu",
       "content": "Aenean ullamcrper scelerisque libero, vitae blandit felis viverra in",
       "isOpen": false
     },
     {
-      "title": "<span class='glyphicon glyphicon-ok'></span>  Maecenas iaculis, arcu eu lobortis cursus",
+      "title": "<span class='glyphicon glyphicon-ok blue'></span>  Maecenas iaculis, arcu eu lobortis cursus",
       "content": "Sed tempus malesuada tincidunt. Curabitur fringilla orci in viverra adipiscing. Aliquam nec tempor arcu",
       "isOpen": false
     },
