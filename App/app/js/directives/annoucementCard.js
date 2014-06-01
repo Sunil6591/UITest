@@ -5,7 +5,7 @@ myFirstApp.directive("annoucementCard",function($compile) {
 		templateUrl: "/templates/directives/annoucementCard.html",
 		controller: "AnnoucementCardController",
 		link: function(scope,element,attrs,controller) {
-			$compile(element.find("p"))(scope);
+			//$compile(element.find("p"))(scope);
 		},
 		scope: {
 			card: "="

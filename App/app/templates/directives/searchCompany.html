@@ -1,8 +1,8 @@
 <form name="SearchForm">
 	<div class="input-group">
-		<input type="text" class="form-control" required placeholder="Search">
+		<input type="text" class="form-control" name="Search" placeholder="Search">
 		<span class="input-group-btn">
-			<button class="btn btn-default" ng-disabled="SearchForm.$invalid" type="submit" ng-click="search(SearchForm)">Go!</button>
+			<button class="btn btn-default" title="Search" ng-disabled="SearchForm.$invalid" type="submit" ng-click="search(SearchForm)">Go!</button>
 		</span>
 		
 	</div>
@@ -16,12 +16,12 @@
 	<form name="AdvanceSearchForm">
 		<div class="form-group">
 			<label for"companyNametxt">Company Name</label>
-			<input id="companyNametxt" type="text" ng-model="companyName" class="form-control form-control-advSearch" placeholder="E.g. SunGard">
+			<input id="companyNametxt" type="text" name="CompanyName" ng-model="companyName" class="form-control form-control-advSearch" placeholder="E.g. SunGard">
 		</div>
 		<div class="form-group">
 			<label for"companyLoctxt">Company Location</label>
-			<input id="companyLoctxt" type="text" ng-model="companyLocation" class="form-control form-control-advSearch" placeholder="E.g. Pune">
+			<input id="companyLoctxt" type="text" name="CompanyLocation" ng-model="companyLocation" class="form-control form-control-advSearch" placeholder="E.g. Pune">
 		</div>
-		<button type="submit" class="btn btn-default">Submit</button>
+		<button type="submit" title="Submit" class="btn btn-default">Submit</button>
 	</form>
 </div>

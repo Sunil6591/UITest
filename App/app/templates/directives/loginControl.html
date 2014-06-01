@@ -1,9 +1,9 @@
 <div ng-controller="LoginController">
 	<form class="navbar-form navbar-left" name="LoginForm">
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="User ID" ng-model="userId" required>
-			<input type="text" class="form-control" placeholder="Password" ng-model="password" required>
+			<input type="text" name="UserId" class="form-control" placeholder="User ID" ng-model="userId" required>
+			<input type="text" name="Password" class="form-control" placeholder="Password" ng-model="password" required>
 		</div>
-		<button type="submit" class="btn btn-default navbar-btn" ng-disabled="LoginForm.$invalid" ng-click="signIn(LoginForm)">Sign In</button>
+		<button type="submit" title="Sign In" class="btn btn-default navbar-btn" ng-disabled="LoginForm.$invalid" ng-click="signIn(LoginForm)">Sign In</button>
 	</form>
 </div>

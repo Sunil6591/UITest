@@ -30,9 +30,19 @@
 	<div>
 		<hr>
 		<div ng-repeat="card in company.annoucements">
+
 			<!-- Semantic markup -->
-			<annoucement-card card=card />						
+			<annoucement-card card=card />					
+		</div>	
+		<!--<h4>{{company.annoucements[0].header}}</h4>
+		<div>
+			<img ng-src="{{company.annoucements[0].imageUrl}}" title="Dog" alt="Dog" class="img-responsive img-rounded" /> 
 		</div>
+		<br>
+		<h5>{{company.annoucements[0].title}}</h5>
+		<div ng-bind-html="company.annoucements[0].content">
+			<p>{{company.annoucements[0].content}}</p>
+		</div>-->
 		
 	</div>
 </div>
