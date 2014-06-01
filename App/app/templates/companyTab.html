@@ -1,35 +1,21 @@
-<div class="row" ng-controller="CompanyTabController">
+<div ng-controller="CompanyTabController">
+<div class="row" >
 	<div class="col-md-7">
-		<h4>Company News</h4>
+		<h4>{{company.header}}</h4>
 		<hr>
 		<div class="vhr">
 			<div style="margin-right:20px">
-				<h5>Maecenas iaculis, arcu eu lobortis cursus, sem quam tristique libero.</h5>
-				<p>Aenean ullamcorper scelerisque libero, vitae blandit felis viverra in. Sed tempus malesuada tincidunt. Curabitur fringilla orci in viverra adipiscing. Aliquam nec tempor arcu</p>
+				<h5>{{company.title}}</h5>
+				<p>{{company.description}}</p>
 
-				<accordion close-others="oneAtATime">
-					<accordion-group>
-					<accordion-heading>
-					<span class="glyphicon glyphicon-ok"></span> Aliquam nec tempor arcu
-				</accordion-heading>
-				This content is straight in the template.
-			</accordion-group>
-			<accordion-group>
-			<accordion-heading>
-			<span class="glyphicon glyphicon-ok"></span> Maecenas iaculis, arcu eu lobortis cursus
-		</accordion-heading>
-		Sed tempus malesuada tincidunt. Curabitur fringilla orci in viverra adipiscing. Aliquam nec tempor arcu
-	</accordion-group>
-	<accordion-group heading="Lorem ipsum dolor sit amet" is-open="true">
-	<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Morbi quis mollis odio:</p>
-	<ul>
-		<li ng-repeat="item in items" ng-bind-html="item">{{item}}</li>
-	</ul>
-	<p>Sed non gravida sem, sed aliquet massa. Nullam a gravida sapien. Nullam imperdiet diam et dictum tristique.<span class="highlightText"> Fusce auctor pulvinar odio iaculis luctus.</span></p>
-</accordion-group>
-<accordion-group heading="{{group.title}}" ng-repeat="group in groups">
-{{group.content}}
-</accordion-group>
+				<accordion close-others="oneAtATime">					
+					<accordion-group  ng-repeat="new in company.news" is-open="new.isOpen">
+						<accordion-heading>
+							<div ng-bind-html="new.title">{{new.title}}
+							</div>
+						</accordion-heading>
+						<div ng-bind-html="new.content">{{new.content}}</div>
+					</accordion-group>
 				</accordion>
 			</div>
 		</div>
@@ -42,7 +28,7 @@
 	</div>
 	<div>
 		<hr>
-		<div ng-repeat="card in companyAnnoucements">
+		<div ng-repeat="card in company.annoucements">
 			<annoucement-card card=card />						
 		</div>
 		
@@ -52,10 +38,11 @@
 
 <div class="row">
 	<div class="col-md-11">
-		<h4>Recap News</h4>
+		<h4>{{company.recapNewsHeader}}</h4>
 		<hr>
 		<div style="width:80%">
-			<p>Fusce at egestas leo. Maecenas imperdiet nibh accumsan est dictum euismod. Donec scelerisque nibh eu vulputate ultricies. Maecenas nulla quam, ullamcorper ac dui sed, interdum aliquet leo. Duis quis blandit nunc. Quisque semper tortor eget leo feugiat, a ultrices diam mattis. Nunc erat leo, consequat non mattis ac, mollis ac libero. <span class="highlightText">Vivamus in laoreet metus.</span></p>
+			<div ng-bind-html="company.recapNewsDescription">
+			<p>{{company.recapNewsDescription}}</p></div>
 		</div>
 		<div class="globeImage" >
 			<img src="/img/globe.png" title="Globe" alt="Globe" class="img-responsive" />
@@ -64,4 +51,5 @@
 		
 	</div>
 	
+</div>
 </div>
