@@ -4,7 +4,7 @@ First of all thanks for the opportunity given !
 	- Unzip the file
 	- Locate /App/server.bat. This runs a node server.
 	- Browse the app "http://localhost:8000/"
-2) Technologies used
+2) Framework/Lib used
 	- AngularJs
 	- Bootstrap
 	- Kendo UI
