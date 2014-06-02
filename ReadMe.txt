@@ -36,10 +36,10 @@ First of all thanks for the opportunity given !
 	Chrome - Pass
 	Firefox - Pass
 	IE 9 - IE 11 - Pass
-	IE 8 - Pass
+	IE 8 - Pass(you can say partial)
 	IE 7 - Fail
 
 5) Things went wrong
-	- I should have tested the app simultaneously in older versions of IE. 	
+	- I should have tested the app simultaneously in older versions of IE right from start. 	
 	- Should have started to write the test scenarios from beginning. Later in dev process it feels too lazy 
 
