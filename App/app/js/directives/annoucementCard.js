@@ -1,15 +1,8 @@
-myFirstApp.directive("annoucementCard",function($compile) {
+myFirstApp.directive("annoucementCard",function($compile, $timeout) {
 	return {
 		restrict: "E",
 		replace: true,
 		templateUrl: "/templates/directives/annoucementCard.html",
-		controller: "AnnoucementCardController",
-		link: function(scope,element,attrs,controller) {
-			//$compile(element.find("p"))(scope);
-		},
-		scope: {
-			card: "="
-			}
-		};
-	
+		controller: "AnnoucementCardController"		
+	};
 });

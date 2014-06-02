@@ -7,7 +7,5 @@ myFirstApp.controller("AnnoucementCardController",function($scope) {
 		else {
 			return false;
 		}
-	}
-
-	
+	}	
 });

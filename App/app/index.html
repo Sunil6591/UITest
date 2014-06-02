@@ -5,8 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link href="/css/kendo.common.min.css" rel="stylesheet" type="text/css" />
-	<link href="/css/kendo.silver.min.css" rel="stylesheet" type="text/css" />
-	<!--<link href="//cdn.kendostatic.com/2014.1.318/styles/kendo.silver.mobile.min.css" rel="stylesheet" type="text/css" />-->
+	<link href="/css/kendo.silver.min.css" rel="stylesheet" type="text/css" />	
 	<link href="/css/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
 	<link href="/css/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -52,7 +51,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">					
-					<img src="/img/businessman.png" alt="Happy business Man" title="Happy business Man" class="img-responsive hidden-xs" >
+						<img src="/img/businessman.png" alt="Happy business Man" title="Happy business Man" class="img-responsive hidden-xs" >
 						<div ng-repeat="card in main.annoucements">
 							<!-- Semantic markup -->
 							<annoucement-card card=card />
@@ -81,7 +80,7 @@
 
 
 
-
+			<!--Third Party Libs-->
 			<!--<script src="/lib/less.min.js"></script>-->
 			<script src="/lib/jquery-1.9.1.min.js"></script>
 			<script src="/lib/kendo.all.min.js"></script>
@@ -94,30 +93,24 @@
 			<script type="text/javascript" src="/lib/bootstrap.min.js"></script>
 			<script type="text/javascript" src="/lib/ui-bootstrap-custom-0.10.0.min.js"></script>
 			<script type="text/javascript" src="/lib/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" ></script>
 
-	<!--<script type="text/javascript" src="/lib/angular/angular.min.js"></script>		
-	<script type="text/javascript" src="/lib/angular/angular-route.min.js"></script>
-	<script type="text/javascript" src="/lib/angular/angular-resource.min.js"></script>-->
-	<script type="text/javascript" src="/js/app.js"></script>
-	<script type="text/javascript" src="/js/controllers/MainController.js"></script>
-	<script type="text/javascript" src="/js/directives/loginControl.js"></script>
-	<script type="text/javascript" src="/js/directives/annoucementCard.js"></script>	
-	<script type="text/javascript" src="/js/controllers/directives/LoginController.js"></script>
-	<script type="text/javascript" src="/js/directives/searchCompany.js"></script>
-	<script type="text/javascript" src="/js/controllers/directives/SearchCompanyController.js"></script>
-	<script type="text/javascript" src="/js/controllers/CompanyTabController.js"></script>
-	<script type="text/javascript" src="/js/controllers/directives/AnnoucementCardController.js"></script>
-	<script type="text/javascript" src="/js/services/CompanyData.js"></script>
-	<script type="text/javascript" src="/js/services/MainData.js"></script>
-	<!--<script type="text/javascript" src="/js/filters.js"></script>
-	<script type="text/javascript" src="/js/controllers/EditEventDetailController.js"></script>
-	<script type="text/javascript" src="/js/controllers/EventDetailController.js"></script>
-	<script type="text/javascript" src="/js/controllers/EventListController.js"></script>
-	<script type="text/javascript" src="/js/controllers/SampleController.js"></script>	
-	<script type="text/javascript" src="/js/services/EventsData.js"></script>
-	<script type="text/javascript" src="/js/directives/mySample.js"></script>
-	<script type="text/javascript" src="/js/directives/eventThumbnail.js"></script>
-	<script type="text/javascript" src="/js/directives/upVote.js"></script>-->
-</body>
-</html>
+			<!--Main App Js-->
+			<script type="text/javascript" src="/js/app.js"></script>
+			<!--Controller-->
+			<script type="text/javascript" src="/js/controllers/MainController.js"></script>
+			<script type="text/javascript" src="/js/controllers/CompanyTabController.js"></script>
+			<!--Directives-->
+			<script type="text/javascript" src="/js/directives/loginControl.js"></script>
+			<script type="text/javascript" src="/js/directives/annoucementCard.js"></script>	
+			<script type="text/javascript" src="/js/directives/unsafeHtml.js"></script>	
+			<script type="text/javascript" src="/js/controllers/directives/LoginController.js"></script>
+			<script type="text/javascript" src="/js/directives/searchCompany.js"></script>
+			<script type="text/javascript" src="/js/controllers/directives/SearchCompanyController.js"></script>			
+			<script type="text/javascript" src="/js/controllers/directives/AnnoucementCardController.js"></script>
+			<!--Services-->
+			<script type="text/javascript" src="/js/services/CompanyData.js"></script>
+			<script type="text/javascript" src="/js/services/MainData.js"></script>
+			<!--Filters-->
+			<script type="text/javascript" src="/js/filters.js"></script>	
+		</body>
+		</html>
