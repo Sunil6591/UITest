@@ -7,8 +7,15 @@
 				<div style="margin-right:20px">
 					<h5>{{company.title}}</h5>
 					<p>{{company.description}}</p>
-
-					<accordion close-others="oneAtATime">					
+					<!--[if lt IE 9]>
+  						<ul>
+  							<li ng-repeat="new in company.news">
+  								<div ng-bind-html="new.title"></div>
+  								<div ng-bind-html="new.content"></div>
+  							</li>
+  						</ul>					
+  					<![endif]-->  					
+  					<accordion close-others="oneAtATime">					
 						<accordion-group  ng-repeat="new in company.news" is-open="new.isOpen">
 						<accordion-heading>
 						<div ng-bind-html="new.title">{{new.title}}
@@ -17,6 +24,7 @@
 					<div ng-bind-html="new.content">{{new.content}}</div>
 				</accordion-group>
 			</accordion>
+					
 		</div>
 	</div>
 </div>
