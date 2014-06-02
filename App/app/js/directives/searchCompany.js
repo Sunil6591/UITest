@@ -1,6 +1,6 @@
 myFirstApp.directive("searchCompany",function() {
 	return {
-		restrict: "E",
+		restrict: "EA",
 		controller: "SearchCompanyController",
 		templateUrl: "/templates/directives/searchCompany.html"
 	};

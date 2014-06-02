@@ -8,7 +8,16 @@ myFirstApp.controller("CompanyTabController", function($scope,$parse,companyData
 	});
 	
 	
-	$scope.callMe = function() {
-		alert('ok');
+	$scope.isCompatible = function() {
+		if (isIE () && isIE () <= 8) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	function isIE () {
+		var myNav = navigator.userAgent.toLowerCase();
+		return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
 	}
 })

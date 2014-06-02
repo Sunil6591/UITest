@@ -36,7 +36,8 @@ First of all thanks for the opportunity given !
 	Chrome - Pass
 	Firefox - Pass
 	IE 9 - IE 11 - Pass
-	IE 8 - Failed !
+	IE 8 - Pass
+	IE 7 - Fail
 
 5) Things went wrong
 	- I should have tested the app simultaneously in older versions of IE. 	
